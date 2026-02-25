@@ -3,8 +3,9 @@ global:
 
 scrape_configs:
   - job_name: "prometheus"
+    scheme: https
     static_configs:
-      - targets: ["say-next-production.up.railway.app:8080"]
+      - targets: ["say-next-production.up.railway.app"]
 
   # - job_name: 'example_api'
   #   scheme: http
